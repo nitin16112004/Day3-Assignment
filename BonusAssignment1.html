@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Fest Registration Form</title>
+</head>
+<body style="font-family: sans-serif;">
+  <h1>Tech Fest Registration</h1>
+  <form method="post">
+    <label for="name" style="margin-right: 20px;">Full Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email" style="margin-right: 20px;">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="year" style="margin-right: 20px;">Year:</label>
+    <select id="year" name="year">
+      <option value="1">First Year</option>
+      <option value="2">Second Year</option>
+      <option value="3">Third Year</option>
+      <option value="4">Fourth Year</option>
+    </select><br><br>
+
+    <label style="margin-right: 20px;">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male" style="margin-right: 20px;">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female" style="margin-right: 20px;">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <label style="margin-right: 20px;">Events Interested In:</label><br>
+    <input type="checkbox" id="coding" name="events" value="Coding">
+    <label for="coding" style="margin-right: 20px;">Coding</label>
+    <input type="checkbox" id="robotics" name="events" value="Robotics">
+    <label for="robotics" style="margin-right: 20px;">Robotics</label>
+    <input type="checkbox" id="design" name="events" value="Design">
+    <label for="design" style="margin-right: 20px;">Design</label>
+    <input type="checkbox" id="quiz" name="events" value="Quiz">
+    <label for="quiz">Quiz</label><br><br>
+
+    <label for="comments" style="margin-right: 20px;">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+    <button type="submit" style="margin: 2px;">Submit</button>
+    <button type="reset" style="margin: 2px;">Reset</button>
+  </form>
+</body>
+</html>
